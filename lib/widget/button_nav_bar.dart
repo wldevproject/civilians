@@ -13,6 +13,7 @@ class BottomNavBarCustom extends StatefulWidget {
   });
 
   final List<MyAppBarItem> items;
+  // final List<BottomNavigationBarItem>? items2;
   final double height;
   final double iconSize;
   final Color backgroundColor;
@@ -80,19 +81,16 @@ class _BottomNavBarCustomState extends State<BottomNavBarCustom> {
           hoverColor: coloring,
           highlightColor: coloring,
           splashColor: coloring,
-          child: SizedBox(
-            width: double.infinity,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(item.iconData, color: color, size: widget.iconSize),
-                Text(
-                  item.text,
-                  style: TextStyle(color: color, fontSize: 11),
-                )
-              ],
-            ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(item.iconData, color: color, size: widget.iconSize),
+              Text(
+                item.text,
+                style: TextStyle(color: color, fontSize: 11),
+              )
+            ],
           ),
         ),
       ),
