@@ -10,13 +10,11 @@ class NavigationScreen extends StatefulWidget {
 }
 
 class _NavigationScreenState extends State<NavigationScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(child: Text('data')),
       // bottomNavigationBar: BottomNavBarCustomV2(),
-
       bottomNavigationBar: BottomNavBarCustom(
         backgroundColor: Colors.black87,
         unselectedColor: Colors.white,
@@ -38,8 +36,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
             iconData: Icons.person_2_rounded,
             text: 'Profile',
           ),
-        ], onTabSelected: (index) {
-      },),
+        ],
+        onTabSelected: (index) {},
+      ),
     );
   }
 }

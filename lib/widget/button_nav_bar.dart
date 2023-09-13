@@ -82,7 +82,8 @@ class _BottomNavBarCustomState extends State<BottomNavBarCustom> {
     required int index,
     required ValueChanged<int> onPressed,
   }) {
-    Color color = _selectedIndex == index ? widget.selectedColor : widget.unselectedColor;
+    Color color =
+        _selectedIndex == index ? widget.selectedColor : widget.unselectedColor;
     Color coloring = Colors.orange.withAlpha(30);
 
     return Expanded(
@@ -103,7 +104,9 @@ class _BottomNavBarCustomState extends State<BottomNavBarCustom> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(item.iconData, color: color, size: widget.iconSize),
-                  Text(item.text, style: TextStyle(color: color, fontSize: 11),
+                  Text(
+                    item.text,
+                    style: TextStyle(color: color, fontSize: 11),
                   )
                 ],
               ),
