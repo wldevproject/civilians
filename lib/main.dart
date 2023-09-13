@@ -16,13 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-        splashFactory: InkRipple.splashFactory,
-        highlightColor: Colors.transparent,
-        splashColor: Color(0x40CCCCCC).withOpacity(.1),
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       home: const NavigationScreen(),
     );
   }
 }
-
