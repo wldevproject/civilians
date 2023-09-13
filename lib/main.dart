@@ -10,10 +10,10 @@ void main() {
   if (!kIsWeb) {
     if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
       setWindowTitle('Flutter Dicoding Submission');
-      setWindowMinSize(const Size(400, 800));
+      setWindowMinSize(const Size(400, 850));
       setWindowMaxSize(Size.infinite);
       Future<void>.delayed(const Duration(seconds: 1), () {
-        setWindowFrame(Rect.fromCenter(center: const Offset(1000, 500), width: 400, height: 800));
+        setWindowFrame(Rect.fromCenter(center: const Offset(1000, 500), width: 400, height: 850));
       });
     }
   }
